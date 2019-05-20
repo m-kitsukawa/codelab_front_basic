@@ -1,0 +1,53 @@
+@charset "utf-8";
+body {
+  background: #f0f8ff;
+}
+* {
+  box-sizing: border-box;
+}
+.wrap {
+  max-width: calc(1280/1920*100%);
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+.header {
+  background: #808080;
+  padding: 50px 0;
+  margin: 40px 20px;
+}
+.main {
+  background: #fa8072;
+  height: 100px;
+  line-height: 100px;
+  width: 40%;
+  float: left;
+}
+.side1{
+  background:#00ffff;
+  width: 20%;
+  line-height: 400px;
+  float: left;
+  overflow:hidden;
+
+}
+.side2{
+  background: #eee8aa;
+  width: 40%;
+  line-height:200px;
+  float: right;
+  overflow:hidden;
+}
+.side3 {
+  background: #7fffd4;
+  line-height:20px;
+  width: 20%;
+ /* clear: both;*/
+}
+.side4 {
+  background: #7fffd4;
+  line-height:20px;
+  width: 20%;
+  float: left;
+  /*clear: both;*/
+}
