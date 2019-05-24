@@ -14,26 +14,26 @@ body {
 .header {
   margin-top: 50px;
   width: 100%;
-  line-height:100px;
+  line-height:110px;
   background: #e6e6fa;
 }
 
 .left{
   background:#fafad2;
-  width: 15%;
-  line-height: 200px;
+  width: 18%;
+  line-height: 290px;
   float: left;
 }
 .right{
   background:#fa8072;
-  width: 15%;
-  line-height: 200px;
+  width: 18%;
+  line-height: 290px;
   float: right;
 }
 
 .footer{
   background: #b0c4de;
   width: 100%;
-  line-height:100px;
+  line-height:110px;
   clear: both;
 }
