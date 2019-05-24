@@ -6,20 +6,21 @@ body {
   box-sizing: border-box;
 }
 .wrap {
-/*  max-width: calc(1280/1920*100%);*/
-  max-width: calc(200/300*100%);
-  font-size: 20px;
+  font-size: 0px;
   text-align: center;
+  margin-top: 40px;
 }
 .nav {
-/*  line-height:30px;*/
+  font-size: 20px;
   background: #bc8f8f;
   padding: 0px 30px;
   display: inline-block;
+  width: 19%;
 }
-
 .column{
-/*  line-height:20px;*/
+  font-size: 20px;
   background: #66cdaa;
   display: inline-block;
-}
+  width: 43%;
+  overflow-wrap : normal;
+  }
