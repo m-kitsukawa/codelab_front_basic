@@ -44,9 +44,9 @@ h2 {
   box-sizing: border-box;
 }
 /* 問題2.　隣接セレクタを使い、ボーダーを付けてみましょう。 */
-.wrap h2 + ul.q2 {
-  border-left: 0;
-  border-right: 1px solid #333;
+.wrap ul.q2 + .wrap ul.q2 li{
+  border-left: 2px solid #333;
+/*  color: rgb(224, 105, 105);*/
 }
 /* 問題3.　最初の要素だけフォントの色(色は「rgb(224, 105, 105)」)を変えてみましょう。 */
 .wrap ul.q3 li:first-child{
@@ -65,9 +65,14 @@ background-color: rgb(236, 231, 231);
   content:"☆";
 }
 /* 問題7.　下記のテキストの最初の文字だけフォントサイズ(30px)を大きくしてみましょう */
-.wrap ul.q7:first-letter{
-  font-size: 80px;
+.wrap p.q.q7:first-letter{
+  font-size: 30px;
 }
 /* 問題8.　リンクをホバーしたときに、aタグのopacityを0.6に変更してください。 */
-
+.wrap .q.q8 a:hover{
+  opacity: 0.6;
+}
 /* 問題9.　否定セレクタを使い最後の要素以外に対して、margin-bottom: 50px;を適用してみましょう。 */
+.wrap .q9 .box:not(:last-child){
+  margin-bottom: 50px;
+}
