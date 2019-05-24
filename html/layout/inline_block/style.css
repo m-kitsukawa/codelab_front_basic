@@ -1,0 +1,25 @@
+@charset "utf-8";
+body {
+  background: #f0f8ff;
+}
+* {
+  box-sizing: border-box;
+}
+.wrap {
+/*  max-width: calc(1280/1920*100%);*/
+  max-width: calc(200/300*100%);
+  font-size: 20px;
+  text-align: center;
+}
+.nav {
+/*  line-height:30px;*/
+  background: #bc8f8f;
+  padding: 0px 30px;
+  display: inline-block;
+}
+
+.column{
+/*  line-height:20px;*/
+  background: #66cdaa;
+  display: inline-block;
+}
