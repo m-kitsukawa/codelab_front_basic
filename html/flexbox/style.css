@@ -67,8 +67,9 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-.flex4 li{
-  width: 198px;
+.flex4 .item17{
+/*  width: 198px;*/
+margin-right:  0px;
 }
 /* 問題5.要素を水平、垂直方向に中央揃えしてください。 */
 .flex5 {
