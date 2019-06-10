@@ -21,10 +21,7 @@ body {
   width: 20%;
   line-height: 31px;
   float: left;
-}
-.item li{
-  margin-bottom: 0px;
-  padding 0px 0px;
+  padding: 10px 0 0 10px;
 }
 .main_content{
   float: left;
