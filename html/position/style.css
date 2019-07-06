@@ -77,7 +77,7 @@
   color: #fff;
 }
 
-/* 問題5. position relativeを使い、box5がactiveになった時、
+/* 問題5. position relativeを使い、box5がactiveになった時
 位置を上に5px、ボーダーを消して下さい　*/
 .box5:active {
   position: relative;
