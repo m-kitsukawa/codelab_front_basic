@@ -19,9 +19,12 @@ body {
 .item{
   background:#00ffff;
   width: 20%;
-  line-height: 31px;
   float: left;
+  height: 300px;
   padding: 10px 0 0 10px;
+}
+.item ul li{
+margin-bottom: 10px;
 }
 .main_content{
   float: left;
