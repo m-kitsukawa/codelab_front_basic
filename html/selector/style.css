@@ -44,7 +44,7 @@ h2 {
   box-sizing: border-box;
 }
 /* 問題2.　隣接セレクタを使い、ボーダーを付けてみましょう。 */
-.wrap ul.q2 + .wrap ul.q2 li{
+.q2 li + li{
   border-left: 2px solid #333;
 /*  color: rgb(224, 105, 105);*/
 }
