@@ -13,14 +13,14 @@ body {
 .nav {
   font-size: 20px;
   background: #bc8f8f;
-  padding: 0px 30px;
   display: inline-block;
   width: 19%;
+  vertical-align: middle;
 }
 .column{
   font-size: 20px;
   background: #66cdaa;
   display: inline-block;
   width: 43%;
-  overflow-wrap : normal;
+  vertical-align: middle;
   }
