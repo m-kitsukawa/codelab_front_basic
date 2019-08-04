@@ -1,11 +1,37 @@
 h1{
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
 }
 h2{
-  font-size: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 table{
-/*  border-collapse:collapse;*/
-/*border : solid;*/
+  border : solid 1px;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 700px;
+}
+
+.title{
+  background-color: #a9a9a9;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th{
+  border : solid 1px;
+  width: 350px;
+  height: 35px;
+}
+
+tr{
+  border : solid 1px;
+}
+
+td{
+  border : solid 1px;
+  height: 20px;
 }

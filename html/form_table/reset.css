@@ -23,12 +23,12 @@ time, mark, audio, video {
     border:0;
     outline:0;
     font-size:100%;
-    vertical-align:baseline;
+/**    vertical-align:baseline;**/
     background:transparent;
 }
  
 body {
-    line-height:1;
+ /**   line-height:1;**/
 }
  
 article,aside,details,figcaption,figure,
@@ -78,7 +78,7 @@ del {
 }
  
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
+/**    border-bottom:1px dotted;**/
     cursor:help;
 }
  
@@ -91,7 +91,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;

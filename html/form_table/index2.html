@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>テーブル・フォーム問題</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+  <h1>フォーム練習</h1><br>
+  <h2>お問い合わせ</h2><br>
+  <table>
+    <tr>
+    　　<td>お名前</td>
+    　　<td><label><input type="text" name="name" class="text"></label></td>
+    </tr>
+    <tr>
+    　　<td>ご住所</td>
+    　　<td><label><input type="text" name="address" class="text"></label></td>
+    </tr>
+    <tr>
+    　　<td>性別</td>
+    　　<td><label><input type="radio" name="gender" value="male" checked>男性</label>
+            <label><input type="radio" name="gender" value="female">女性</label></td>
+    </tr>
+    <tr>
+    　　<td>お問い合わせ種別</td>
+    　　<td><select name="category" class="select">
+        <label><option value="consultation">ご相談</option></label>
+          <label><option value="catalog" selected>資料請求</option></label>
+            <label><option value="other">その他</option></label>
+            </select></td>
+    </tr>
+    <tr>
+    　　<td>ご希望の連絡先方法<br>（複数選択可）</td>
+    　　<td><label><input type="checkbox" name="contact" value="mail">メール</label>
+      <label><input type="checkbox" name="contact" value="tel">電話</label>
+        <label><input type="checkbox" name="contact" value="visit">訪問</label></td>
+    </tr>
+    <tr>
+    　　<td>お問い合わせ内容</td>
+    　　<td><label><input type="text" name="contents" class="contents"></label></td>
+    </tr>
+  </table>
+  <div class="button">
+  <button class="submit" type="submit" name="submit" value="value">送信</button>
+</div>
+</body>
+</html>

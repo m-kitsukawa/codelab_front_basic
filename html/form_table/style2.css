@@ -1,0 +1,66 @@
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+table{
+  border : solid 1px;
+  margin: 0 auto;
+  width: 700px;
+}
+
+table td:first-child{
+  background-color: #a9a9a9;
+  font-size: 15px;
+  vertical-align: middle;
+  font-weight: bold;
+  width: 200px;
+}
+
+tr{
+  border : solid 1px;
+}
+
+td{
+  border : solid 1px;
+  padding-left: 10px;
+  height: 50px;
+}
+
+.text{
+  width: 420px;
+  height: 30px;
+  resize: none;
+}
+
+.select{
+  width: 120px;
+  height: 20px;
+}
+
+.contents{
+  resize: none;
+  width: 420px;
+  height: 210px;
+  margin: 10px 10px 10px 0px;
+}
+
+.button{
+  text-align: center;
+}
+
+button.submit{
+background-color: #1e90ff;
+margin-top: 40px;
+margin-bottom: 40px;
+position: relative;
+right: 20px;
+width: 190px;
+height: 60px;
+color: #ffffff;
+border-style: none;
+}
