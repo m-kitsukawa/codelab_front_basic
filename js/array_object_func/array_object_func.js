@@ -23,32 +23,30 @@ console.log(cars.length);
 
 // 配列問題(for文との組み合わせ)
 // 変数carsの要素をfor文を使い全て表示してください。
-for (var i = 0; i < 4; i++){
-  if(i === 1){
-    for (var j = 0; j < 3; j++){
+for (var i = 0; i < cars.length; i++){
+  if(Array.isArray(cars[i])){
+  for (var j = 0; j < cars[i].length; j++){
       console.log(cars[i][j]);
-     }
-  }
+      }
+    }
   else{
     console.log(cars[i]);
-  }
     }
-
+  }
 // 配列問題(要素の追加)
 // 変数carsの配列末尾に文字列「スバル」を追加してください。
-cars[4] = 'スバル';
+cars.push = ('スバル');
 // 追加後、for文を使い、結果をコンソールに表示してください。
-for (var i = 0; i < 5; i++){
-  if(i === 1){
-    for (var j = 0; j < 3; j++){
+for (var i = 0; i < cars.length; i++){
+  if(Array.isArray(cars[i])){
+  for (var j = 0; j < cars[i].length; j++){
       console.log(cars[i][j]);
-     }
-  }
+      }
+    }
   else{
     console.log(cars[i]);
-  }
     }
-
+  }
 // 配列問題(要素の更新)
 // 変数carsの要素「クラウン」の値を「セルシオ」に更新してください。
 cars[1][1] = 'セルシオ';
