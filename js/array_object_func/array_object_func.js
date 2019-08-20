@@ -35,7 +35,7 @@ for (var i = 0; i < cars.length; i++){
   }
 // 配列問題(要素の追加)
 // 変数carsの配列末尾に文字列「スバル」を追加してください。
-cars.push = ('スバル');
+cars.push('スバル');
 // 追加後、for文を使い、結果をコンソールに表示してください。
 for (var i = 0; i < cars.length; i++){
   if(Array.isArray(cars[i])){
