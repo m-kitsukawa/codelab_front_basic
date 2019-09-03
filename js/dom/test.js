@@ -33,8 +33,8 @@ var form5 = document.getElementById("form5");
 form5.addEventListener('submit', function(e){
   e.preventDefault();
 
-if (document.getElementById('form5').value === null) {
-  alert('空文字です');
+if (document.getElementById('form5').value == null) {
+  alert('会社名が未入力です。');
   return false; //submitを中断
    }
 else{
