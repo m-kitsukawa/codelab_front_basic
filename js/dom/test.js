@@ -11,13 +11,12 @@
 // 送信ボタンをクリックしたとき、セレクトボックス(name属性item1のvalue)の選択中の値を取得し、id属性result1に出力してください。
 //分岐するif使う、判断材料select indexofメソッドでリスト何番目
 //var form2 = document.getElementById("form2");
-var form2 = document.getElementByName("item1");
+var item1 = document.getElementByName("item1").value;
 var selindex = form2.selectedIndex;
-var value = form2.value;
 form2.addEventListener('submit', function(e){
     //return false; //submitを中断
     e.preventDefault();
-    document.getElementById("result1").innerHTML = form2.value;
+    document.getElementById("result1").innerHTML = selindex;
 }, false);
 
 
