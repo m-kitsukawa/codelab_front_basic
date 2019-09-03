@@ -31,14 +31,13 @@ form2.addEventListener('submit', function(e){
 // 会社名が未入力のまま送信ボタンをクリックしたとき、「会社名が未入力です。」というアラートを表示してください。また未入力の場合は、処理を中断してください。
 var form5 = document.getElementById("form5");
 form5.addEventListener('submit', function(e){
-  //return false; //submitを中断
   e.preventDefault();
 
 if (document.getElementById('form5').value === null) {
   alert('空文字です');
+  return false; //submitを中断
    }
 else{
-  alert(form5.value = document.getElementById('form5').innerHTML);
+  alert(form5.innerHTML = document.getElementById('form5').innerHTML);
    }
 }, false);
-
