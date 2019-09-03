@@ -9,7 +9,6 @@
   }, false);
 // 問題6：フォーム部品の取得(セレクトボックス)
 // 送信ボタンをクリックしたとき、セレクトボックス(name属性item1のvalue)の選択中の値を取得し、id属性result1に出力してください。
-//分岐するif使う、判断材料select indexofメソッドでリスト何番目
 //var form2 = document.getElementById("form2");
 var item1 = document.getElementByName("item1").value;
 var selindex = form2.selectedIndex;
