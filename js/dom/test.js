@@ -10,12 +10,16 @@
 // 問題6：フォーム部品の取得(セレクトボックス)
 // 送信ボタンをクリックしたとき、セレクトボックス(name属性item1のvalue)の選択中の値を取得し、id属性result1に出力してください。
 var form2 = document.getElementById("form2");
-//var item1 = document.getElementByName("item1").value;
-var selindex = form2.selectedIndex;
 form2.addEventListener('submit', function(e){
     //return false; //submitを中断
     e.preventDefault();
-    document.getElementById("result1").innerHTML = selindex;
+    var item1 = document.form2.item1;
+    var num = item1.selectedIndex;
+    var str = item1.options[num].value;
+    var result = document.getElementById("result").innerHTML;
+    result.innerHTML = str;
+//    document.getElementById("result1").innerHTML = str;
+//    result.innerHTML = document.getElementById("result").innerHTML;
 }, false);
 
 
@@ -31,13 +35,13 @@ form2.addEventListener('submit', function(e){
 // 会社名が未入力のまま送信ボタンをクリックしたとき、「会社名が未入力です。」というアラートを表示してください。また未入力の場合は、処理を中断してください。
 var form5 = document.getElementById("form5");
 form5.addEventListener('submit', function(e){
-  e.preventDefault();
 
-if (document.getElementById('form5').value == null) {
+if (document.getElementById('form5').company.value == "") {
   alert('会社名が未入力です。');
-  return false; //submitを中断
+  e.preventDefault();
    }
 else{
-  alert(form5.innerHTML = document.getElementById('form5').innerHTML);
+  alert(form5.company.value);
+  form5.submit();
    }
 }, false);
