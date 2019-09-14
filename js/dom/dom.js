@@ -50,8 +50,8 @@ form2.addEventListener('submit', function(e){
 // 問題7：フォーム部品の取得(チェックボックス)
 // 送信ボタンをクリックしたとき、チェックボックス(name属性item1のvalue)の選択中の値を取得し、id属性result2に出力してください。
 var form3 = document.getElementById("form3");
-const arr1 = [];
 form3.addEventListener('submit', function(e){
+  var arr1 = [];
     e.preventDefault();
     for (let i = 0; i < form3.length; i++){
     if(form3[i].checked){
@@ -64,8 +64,8 @@ form3.addEventListener('submit', function(e){
 // 問題8：フォーム部品の取得(ラジオ)
 // 送信ボタンをクリックしたとき、ラジオボタン(name属性item1のvalue)の選択中の値を取得し、id属性result3に出力してください。
 var form4 = document.getElementById("form4");
-const arr2 = [];
 form4.addEventListener('submit', function(e){
+  var arr2 = [];
     e.preventDefault();
     for (let i = 0; i < form4.length; i++){
     if(form4[i].checked){
