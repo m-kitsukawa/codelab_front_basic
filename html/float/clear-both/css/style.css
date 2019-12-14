@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @charset "UTF-8";
 html {
   font-size: 62.5%;
@@ -14,7 +13,6 @@ body {
   margin: 50px auto;
   font-size: 2rem;
   text-align: center;
-  clear: both;
 }
 .header {
   background: #e6e6fa;
@@ -24,8 +22,6 @@ body {
 .footer {
   background: #add8e6;
   padding: 5rem 0;
-  clear: both;
-
 }
 
 /*以下に自身でcssを記載する*/
@@ -48,6 +44,6 @@ body {
 
  }
 
-=======
->>>>>>> fbca87d72251b048ba9c972c186b6f5bbe40cd88
-
+ .both {
+   clear: both;
+ }
