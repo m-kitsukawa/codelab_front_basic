@@ -1,0 +1,22 @@
+header
+ div_title
+ div_header_menu
+
+div_glin
+
+main
+ main_img
+ div_contents
+  div_text1
+  div_text2
+
+ div_img
+  div_img_1
+   img1
+   img2
+  div_img_2
+   img3
+   img4
+
+div_footer
+footer
