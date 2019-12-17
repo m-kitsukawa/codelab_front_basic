@@ -6,7 +6,9 @@ body {
   box-sizing: border-box;
 }
 .wrap {
-  max-width: calc(1280/1920*100%);
+  /* max-width: calc(1280/1920*100%); */
+  max-width: 1440px;
+  min-width: 1200px;
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
@@ -17,16 +19,17 @@ body {
 }
 .main {
   background: #fa8072;
-  height: 600px;
+  height: 60%;
   line-height: 600px;
   width: 600px;
-  float: left;
+  float: right
 }
 .side{
   background: #ffffe0;
   width: 410px;
+  height: 60%;
   line-height: 600px;
-  float: right;
+  float: left;
 }
 .footer {
   background: #add8e6;
