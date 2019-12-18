@@ -6,9 +6,7 @@ body {
   box-sizing: border-box;
 }
 .wrap {
-  /* max-width: calc(1280/1920*100%); */
-  max-width: 1440px;
-  min-width: 1200px;
+  max-width: calc(1280/1920*100%);
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
@@ -16,23 +14,29 @@ body {
 .header {
   background: #e6e6fa;
   padding: 50px 0;
+  height: 20%;
+  /* line-height: 100%; */
+  width: 60%;
 }
 .main {
   background: #fa8072;
   height: 60%;
-  line-height: 600px;
-  width: 600px;
+  line-height: 1000%;
+  width: 60%;
   float: right
 }
 .side{
   background: #ffffe0;
-  width: 410px;
-  height: 60%;
-  line-height: 600px;
+  width: 40%;
+  height: 80%;
+  line-height: 1000%;
   float: left;
 }
 .footer {
   background: #add8e6;
   padding: 50px 0;
+  height: 20%;
+  /* line-height: 15%; */
+  width: 60%;
   clear: both;
 }
