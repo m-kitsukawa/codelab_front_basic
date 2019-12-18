@@ -2,9 +2,10 @@ function formCheck(){
   var flag = 0;
 
   // 入力必須項目が入力されているかチェック
+  var form = document.getElementsById("form");
   var name = document.getElementsByName("name");
-  if (name.value == "") {
-    var errname = document.getElementsByName("err-name");
+  if (document.getElementByName('name').value == "") {
+    var errname = document.getElementsById("err-name");
     errname.innerHTML = '名前が未入力です。';
     e.preventDefault();
     flag = 1;
@@ -22,5 +23,3 @@ function formCheck(){
 
   }
 }, false);
-
-
