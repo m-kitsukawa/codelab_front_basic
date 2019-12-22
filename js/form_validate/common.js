@@ -1,25 +1,21 @@
-function formCheck(){
-  var flag = 0;
-
+(function(){//即時関数　スコープ
   // 入力必須項目が入力されているかチェック
-  var form = document.getElementsById("form");
+  var form = document.getElementById("form");
   var name = document.getElementsByName("name");
-  if (document.getElementByName('name').value == "") {
-    var errname = document.getElementsById("err-name");
-    errname.innerHTML = '名前が未入力です。';
-    e.preventDefault();
-    flag = 1;
-     }
-  else{
-      }
-    }
-  var submit = document.getElementsById("submit");
-  submit.addEventListener('submit', function(e){
-  if(flag){ // 入力必須項目に未入力があった場合
-      window.alert( '必須項目は全て入力して下さい。' ); // 一旦アラートを表示
-      return false; // 送信中止
-  }else{ // 入力必須項目が全て入力済みだった場合
-      return true; // 送信実行
+  var errname = document.getElementById("err-name");
 
-  }
+  form.addEventListener('submit', function(e){
+    errname.innerHTML = "";
+   // if (name[0].value == "") {
+    if (form.name.value == "") {
+      errname.innerHTML = '名前が未入力です。';
+      e.preventDefault();
+       }else {
+         console.log("else");
+       }
 }, false);
+}());
+
+//　booleanで真偽値
+// function formCheck(){ on Click buttonで発動する
+// hogehogehogeは配列みたいなやつを使う。単体はform.みたいに明示する
