@@ -34,8 +34,9 @@ body {
 }
 .header_menu{
   /* float: right; */
-  font-size: 10px;
+  font-size: 15px;
   overflow: hidden;
+  margin-right: 60px;
 }
 ul{
   float: right;
@@ -43,12 +44,16 @@ ul{
 
 li{
   float: left;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .g_line h3{
-  width: 30%;
+  width: 50%;
   height: 10%;
-  line-height:15px;
+  line-height:35px;
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
 .main_img img{
@@ -59,6 +64,7 @@ li{
 }
 .contents{
   height: 20%;
+  margin-bottom: 40px;
   /* width: 30%; */
 }
 .contents_img, .content_text{
@@ -68,11 +74,11 @@ li{
 }
 
 .contents_img img ,.content_text p{
-  padding: 10px;
+  padding: 5px 10px;
   width: 50%;
   height: auto;
   text-align: left;
-  line-height: 20px;
+  line-height: 25px;
 }
 /* .img_1{
   height: 10%;
@@ -89,8 +95,8 @@ li{
   justify-content: center;
 }
 .foot img{
-  height: 50px;
-  width: 90px;
+  height: 80px;
+  width: 100px;
 }
 .footer {
   padding: 50px 0;
