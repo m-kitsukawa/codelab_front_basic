@@ -5,38 +5,119 @@ body {
 * {
   box-sizing: border-box;
 }
-.wrap {
-  max-width: calc(1280/1920*100%);
-  margin: 0 auto;
-  font-size: 20px;
+.container {
+  display: flex;
+}
+.left {
+  width: 300px;
+  background-color: #191970;
+  color: #f0f8ff;
+}
+.nav {
   text-align: center;
 }
-.header {
-  background: #e6e6fa;
-  padding: 50px 0;
+.nav img {
+  height: 30px;
+  width: 30px;
+  margin-top: 30%;
+}
+.nav h4 {
+  font-size: 30px;
+  margin-top: 8%;
+}
+.nav_list {
+  margin-top: 40%;
+}
+/* .nav_list ul{
+} */
+.nav_list li {
+  color: #f0f8ff;
+  margin-top: 15%;
+  /* margin: 0 auto; */
+}
+.contents {
+  flex: 1;
+  background-color: #f0f8ff;
+}
+/* .title{
+  width: 100%;
   height: 20%;
-  /* line-height: 100%; */
-  width: 60%;
+} */
+.title_img img {
+  width: 50%;
+  height: 10%;
 }
-.main {
-  background: #fa8072;
-  height: 60%;
-  line-height: 1000%;
-  width: 60%;
-  float: right
+.title h3 {
+  color: #191970;
+  font-size: 30px;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
-.side{
-  background: #ffffe0;
-  width: 40%;
+.about_main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.about_img img {
+  margin-top: 5%;
+  width: 50%;
   height: 80%;
-  line-height: 1000%;
-  float: left;
 }
-.footer {
-  background: #add8e6;
-  padding: 50px 0;
-  height: 20%;
-  /* line-height: 15%; */
-  width: 60%;
-  clear: both;
+.about h3 {
+  color: #191970;
+  font-size: 30px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.about_cts{
+  width: 22%;
+  height: 9%;
+}
+.gallery_img {
+  display: flex;
+  /* カラム落ちを利用している */
+  flex-wrap: wrap;
+}
+.gallery_img img {
+  width: 12%;
+  height: 8%;
+}
+.gallery h3 {
+  color: #191970;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.scd_gallery h3 {
+  color: #191970;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.scd_img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.scd_img img {
+  width: 12%;
+  height: 8%;
+}
+.trd_gallery h3 {
+  color: #191970;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.trd_img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.trd_img img {
+  width: 12%;
+  height: 8%;
+}
+.contact h3 {
+  color: #191970;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
