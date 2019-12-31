@@ -27,6 +27,7 @@ body {
 }
 .nav_list {
   margin-top: 40%;
+  text-align: center;
 }
 /* .nav_list ul{
 } */
@@ -39,19 +40,25 @@ body {
   flex: 1;
   background-color: #f0f8ff;
 }
+.main_cts{
+  padding: 0 10%;
+}
 /* .title{
   width: 100%;
   height: 20%;
 } */
 .title_img img {
-  width: 50%;
-  height: 10%;
+  width: 70%;
+  height: 1%;
 }
 .title h3 {
   color: #191970;
   font-size: 30px;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
   margin-top: 5%;
+}
+.title p{
+  line-height: 25px;
 }
 .about_main{
   display: flex;
@@ -59,8 +66,9 @@ body {
 }
 .about_img img {
   margin-top: 5%;
-  width: 50%;
+  width: 90%;
   height: 80%;
+  padding: 5px 10px;
 }
 .about h3 {
   color: #191970;
@@ -69,8 +77,14 @@ body {
   margin-top: 5%;
 }
 .about_cts{
-  width: 22%;
+  width: 40%;
   height: 9%;
+}
+.about_cts button{
+  background-color: #4682b4;
+  color: white;
+  height: 60px;
+  width: 200px;
 }
 .gallery_img {
   display: flex;
@@ -80,6 +94,7 @@ body {
 .gallery_img img {
   width: 12%;
   height: 8%;
+  padding: 5px 10px;
 }
 .gallery h3 {
   color: #191970;
@@ -98,8 +113,9 @@ body {
   flex-wrap: wrap;
 }
 .scd_img img {
-  width: 12%;
-  height: 8%;
+  width: 20%;
+  height: 15%;
+  padding: 5px 10px;
 }
 .trd_gallery h3 {
   color: #191970;
@@ -112,8 +128,9 @@ body {
   flex-wrap: wrap;
 }
 .trd_img img {
-  width: 12%;
-  height: 8%;
+  width: 15%;
+  height: 10%;
+  padding: 5px 10px;
 }
 .contact h3 {
   color: #191970;
@@ -121,3 +138,15 @@ body {
   margin-top: 5%;
   margin-bottom: 2%;
 }
+
+/* テーブルレイアウト */
+input{
+width: 20%;
+}
+.contact button{
+  background-color: #4682b4;
+  color: white;
+  height: 60px;
+  width: 200px;
+}
+
