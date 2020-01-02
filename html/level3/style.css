@@ -1,0 +1,103 @@
+/* ヘッダーデザイン */
+/* https://kuzlog.com/2017/03/17/1339/ */
+.header {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background: #808080;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+  margin-bottom: 30px;
+  /* 「SNSシェア」を右に配置 */
+  display: flex;
+  justify-content: space-between;
+}
+.header::before,
+.header::after {
+  height: 20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.header::before {
+  top: -20px;
+  background: linear-gradient(45deg, #808080 10px, transparent 0),
+    linear-gradient(315deg, #808080 10px, transparent 0);
+  background-size: 20px 20px;
+}
+.header::after {
+  bottom: -20px;
+  background: linear-gradient(135deg, #808080 10px, transparent 0),
+    linear-gradient(225deg, #808080 10px, transparent 0);
+  background-size: 20px 20px;
+}
+/* ヘッダー中身デザイン */
+.title {
+  width: 15%;
+}
+.title h1 {
+  color: #fff;
+}
+.title h2 {
+  color: #fff;
+}
+.share {
+    /* 「SNSシェア」を右に配置 */
+    display: flex;
+    justify-content: space-between;
+  /* background-image: url(img-3/sprite.png) no-repeat; */
+  /* background-position: 0 50px; */
+}
+.share h1 {
+  color: #fff;
+}
+.share img{
+  display: block;
+  height: 32px;
+  width: 80px;
+  overflow: hidden;
+}
+.share img a:hover {
+  margin: 0px -80px -32px 0;
+}
+body {
+  background-image: url(img-3/bg_tekusu.jpg);
+}
+.nav, .side_menu{
+  width: 400%;
+}
+main{
+  display: flex;
+  align-items: flex-start;
+  width: 980px;
+}
+/* 左サイトメニューデザイン */
+.nav p {
+  font-size: 10px;
+}
+ul{
+  width: 100%;
+}
+li:first-child {
+  width: 100%;
+  height: 50px;
+}
+/* ここ直したい */
+/* .search{ */
+li:nth-child(2) {
+  width: 100%;
+  height: 40px;
+}
+li {
+  background-color: #FFF;
+  color: #000;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 2px;
+}
+.main_cts{
+  padding-left: 50px;
+}
+.side_menu{
+  padding-left: 50px;
+}
