@@ -1,0 +1,21 @@
+■jQueryのバージョンの違い 1系/2系/3系
+・1.X系はIE8以前をサポートする
+・2.X系はIE9以降をサポートする
+・2.X系と3.X系のサポートブラウザに差はない
+・3.X系は再設計されて処理の呼び出しなどが異なる
+■セレクタ
+jQueryから操作したい「HTML要素の場所」を指定する処理
+基本的にjQueryの書き方は、「どのHTML要素で」「どんな事をするのか」という記述方法になるため、まず最初に「どのHTML要素で（セレクタ）」ということを決める必要がある
+https://www.sejuku.net/blog/35791
+■プラグイン
+初心者向け記事
+https://blog.mudatobunka.org/entry/2016/08/26/230722
+https://web-firstlog.com/12-31-jquery/
+■CDN
+インターネット経由でファイルを配信する仕組みのこと
+https://www.sejuku.net/blog/65045
+■jQueryオブジェクト
+オブジェクト→オブジェクトとはスクリプトで操作する対象のことを指します
+jQueryオブジェクト→jQueryで利用するオブジェクトです。
+http://www.jquerystudy.info/tutorial/intro/object.html
+https://blog.webcreativepark.net/2012/12/22-135621.html 
