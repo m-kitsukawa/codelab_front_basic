@@ -30,19 +30,15 @@
       }
       //全角カタカナ未入力用
       //デバッグはいけてそうだが定義ができてない…？
-      var str = "アイウエオワイウエオン";
-      var kanachk = /^([ァ-ン]|ー)+$/;
+      var kanachk = new RegExp(/^([ァ-ン]|ー)+$/);
       errkana.innerHTML = "";
       errkana.style.color = '#dc143c';
       if (form.kana.value == "") {
+        errkana.innerHTML = "フリガナが未入力です。";
+        e.preventDefault();
+      } else if (form.kana.value.match(kanachk) === null) {
         errkana.innerHTML = "全角カタカナが未入力です。";
         e.preventDefault();
-        // } else if (form.kana.value == str.match(kanachk)) {
-      } else if (form.kana.value == str.match(/^[\u30A0-\u30FF]+$/)) {
-        errkana.innerHTML = "全角カタカナが未入力です。";
-        e.preventDefault();
-      } else {
-        console.log("else");
       }
       //電話番号未入力用
       //デバッグはいけてそうだが定義ができてない…？
