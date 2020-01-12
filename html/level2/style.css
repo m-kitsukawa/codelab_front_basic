@@ -9,7 +9,7 @@ body {
   display: flex;
 }
 .left {
-  width: 300px;
+  width: 475px;
   background-color: #191970;
   color: #f0f8ff;
 }
@@ -17,24 +17,22 @@ body {
   text-align: center;
 }
 .nav img {
-  height: 30px;
-  width: 30px;
-  margin-top: 30%;
+  height: 80px;
+  width: 80px;
+  margin-top: 25%;
 }
 .nav h4 {
-  font-size: 30px;
+  font-size: 58px;
   margin-top: 8%;
 }
 .nav_list {
   margin-top: 40%;
   text-align: center;
 }
-/* .nav_list ul{
-} */
 .nav_list li {
   color: #f0f8ff;
   margin-top: 15%;
-  /* margin: 0 auto; */
+  font-size: 25px;
 }
 .contents {
   flex: 1;
@@ -43,13 +41,9 @@ body {
 .main_cts{
   padding: 0 10%;
 }
-/* .title{
-  width: 100%;
-  height: 20%;
-} */
 .title_img img {
-  width: 70%;
-  height: 1%;
+  width: 100%;
+  height: auto;
 }
 .contents-inner h3 {
   color: #191970;
@@ -139,15 +133,44 @@ body {
   margin-bottom: 2%;
 }
 
-/* テーブルレイアウト */
-input{
-width: 20%;
+/* formレイアウト */
+.contact_form{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
+input{
+  width: 50%;
+  margin-bottom: 5%;
+  border-color:#4169e1;
+  border-width: 1px;
+}
+input::placeholder{
+  color: #4169e1;
+}
+/* 高さがきかない */
+/* input .inp_contents{
+  width: 80%;
+  height: 50%;
+  margin-bottom: 5%;
+} */
 .contact button{
   background-color: #4682b4;
   color: white;
   height: 60px;
   width: 200px;
+  margin-bottom: 10%;
 }
+.contact_text{
+  width: 20%;
+  height: 20%;
+  margin-top: 5%;
 
-/* 枠線を青くするのはフォーム部品をCSS */
+}
+.p1{
+  line-height: 10px;
+}
+.p2{
+  line-height: 8px;
+}
