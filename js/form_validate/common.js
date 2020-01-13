@@ -29,47 +29,38 @@
         console.log("else");
       }
       //全角カタカナ未入力用
-      //デバッグはいけてそうだが定義ができてない…？
       var kanachk = new RegExp(/^([ァ-ン]|ー)+$/);
       errkana.innerHTML = "";
       errkana.style.color = '#dc143c';
       if (form.kana.value == "") {
         errkana.innerHTML = "フリガナが未入力です。";
         e.preventDefault();
-      } else if (form.kana.value.match(kanachk) === null) {
+      } else if (form.kana.value.match(kanachk) == null) {
         errkana.innerHTML = "全角カタカナが未入力です。";
         e.preventDefault();
-      }
+      };
       //電話番号未入力用
-      //デバッグはいけてそうだが定義ができてない…？
-      var str = "123456";
-      var telchk = /^\d{10}$/;
+      var telchk = new RegExp(/^\d{10}$/);
       errtel.innerHTML = "";
       errtel.style.color = '#dc143c';
       if (form.tel.value == "") {
+        errtel.innerHTML = "電話番号が未入力です。";
+        e.preventDefault();
+      } else if (form.tel.value.match(telchk) == null) {
         errtel.innerHTML = "半角数字が未入力です。";
         e.preventDefault();
-      } else if (form.tel.value == str.match(telchk)) {
-        errtel.innerHTML = "半角数字が未入力です。";
-        e.preventDefault();
-      } else {
-        console.log("else");
-      }
+      };
       //メールアドレス未入力用
-      //デバッグはいけてそうだが定義ができてない…？
-      var str = "123456";
-      var mailchk = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/;
+      var mailchk = new RegExp(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/);
       errmail.innerHTML = "";
       errmail.style.color = '#dc143c';
       if (form.mail.value == "") {
         errmail.innerHTML = "メールアドレスが未入力です。";
         e.preventDefault();
-      } else if (form.mail.value == str.match(mailchk)) {
-        errmail.innerHTML = "メールアドレスが未入力です。";
+      } else if (form.mail.value.match(mailchk) == null) {
+        errmail.innerHTML = "アドレスが形式が未入力です。";
         e.preventDefault();
-      } else {
-        console.log("else");
-      }
+      };
     },
     false
   );
