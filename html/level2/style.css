@@ -44,6 +44,7 @@ color: #fffacd;
 .main_cts{
   padding: 0 5%;
 }
+
 .title_img img {
   width: 100%;
   height: auto;
@@ -77,11 +78,15 @@ color: #fffacd;
   width: 40%;
   height: 9%;
 }
+.about_cts p{
+  line-height: 30px;
+}
 .about_cts button{
   background-color: #4682b4;
   color: white;
   height: 60px;
   width: 200px;
+  margin-top: 40px;
 }
 .gallery_img {
   display: flex;
@@ -147,19 +152,20 @@ color: #fffacd;
   width: 60%;
   margin-right: -10%;
 }
-input{
+input,textarea{
   width: 70%;
   margin-bottom: 5%;
   border-color:#4169e1;
   border-width: 1px;
 }
-input::placeholder{
+textarea{
+  height: 200px;
+}
+input::placeholder, textarea::placeholder{
   color: #4169e1;
-  /* 左上に配置したい */
-  text-align: top;
 }
 .inp_contents{
-  height: 50%;
+  /* height: 300px; */
   margin-bottom: 5%;
 }
 .contact button{
@@ -173,10 +179,10 @@ input::placeholder{
   width: 40%;
   height: 20%;
   margin-top: 5%;
-  line-height: 5px;
-}
-.p1{
   line-height: 10px;
+}
+.contents-inner .p1{
+  line-height: 30px;
   margin-bottom: 5%;
 }
 .p2{
