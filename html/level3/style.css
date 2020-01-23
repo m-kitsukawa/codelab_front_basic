@@ -1,10 +1,24 @@
 /* ヘッダーデザイン */
-/* https://kuzlog.com/2017/03/17/1339/ */
-.header::after {
+.header{
+  height: 50%;
+  margin-bottom: 5%;
+  color: #fff;
+}
+.title h1{
+  font-weight: bold;
+  font-size: x-large;
+}
+.box{
+  background-color: #858585;
+  height: 160px;
+  width: 100%;
+}
+.giza{
   background-image: url(img-3/bg_giza.png);
-  background-position: bottom 5px;
-  display: block;
   content: "";
+  display: block;
+  height: 8px;
+  background-position: 0 17px;
 }
 /* 疑似要素after */
 /* displayblock
@@ -13,33 +27,37 @@ background imageで画像
 background potitionで位置調整 */
 
 /* ヘッダー中身デザイン */
-.title {
-  width: 15%;
-}
-.title h1 {
-  color: #fff;
-}
-.title h2 {
-  color: #fff;
-}
-/* 横並びにしようと親クラス作ったけどうまくできなかった */
-/* .share_icon{ */
-  /* display: flex;
-  justify-content: space-between; */
-/* } */
-/* .icon { */
-  .share{
+.share_tw{
   display: flex;
   justify-content: space-between;
   /* ホバーは1個ずつつくる */
   background-image: url(img-3/sprite.png);
   background-position: 20px 0px;
   background-repeat: no-repeat;
+  height: 32px;
+  width: 52px;
 }
-.share:hover{
+.share_tw:hover{
   background-image: url(img-3/sprite.png);
-  background-position: 20px 32px;
+  background-position: 40px -32px;
+  height: 32px;
 }
+.share_fb{
+  display: flex;
+  justify-content: space-between;
+  /* ホバーは1個ずつつくる */
+  background-image: url(img-3/sprite.png);
+  background-position: -12px 0px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 52px;
+}
+.share_fb:hover{
+  background-image: url(img-3/sprite.png);
+  background-position: 20px -32px;
+  height: 32px;
+}
+/*
 .share h1 {
   color: #fff;
 }
@@ -51,7 +69,7 @@ background potitionで位置調整 */
 }
 .share img a:hover {
   margin: 0px -80px -32px 0;
-}
+} */
 body {
   background-image: url(img-3/bg_tekusu.jpg);
   /* margin-left: 50px; */
