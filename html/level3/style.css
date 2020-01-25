@@ -4,6 +4,9 @@
   color: #fff;
   background-color: #858585;
 }
+p,li{
+  font-family: sans-serif;
+}
 .title h1 {
   font-weight: bold;
   font-size: x-large;
@@ -26,18 +29,18 @@
   height: 8px;
   background-position: 0 17px;
   margin-bottom: 2%;
-
 }
 /* 疑似要素after */
 /* displayblock
 content"" 空領域
 background imageで画像
 background potitionで位置調整 */
-
-/* ヘッダー中身デザイン */
-.header_contents{
+.header_contents {
   width: 980px;
   margin-left: 250px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 2%;
 }
 .share {
   justify-content: end;
@@ -47,7 +50,7 @@ background potitionで位置調整 */
   justify-content: space-between;
   display: flex;
 }
-.share_title h1{
+.share_title h1 {
   font-weight: bold;
   font-size: x-large;
 }
@@ -56,7 +59,6 @@ background potitionで位置調整 */
   font-size: x-large;
 }
 .share_tw {
-  /* ホバーは1個ずつつくる */
   background-image: url(img-3/sprite.png);
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -69,7 +71,6 @@ background potitionで位置調整 */
   height: 32px;
 }
 .share_fb {
-  /* ホバーは1個ずつつくる */
   background-image: url(img-3/sprite.png);
   background-position: -32px 0px;
   background-repeat: no-repeat;
@@ -87,7 +88,7 @@ body {
 }
 .nav,
 .side_menu {
-  width: 400%;
+  width: 300%;
 }
 main {
   display: flex;
@@ -98,51 +99,109 @@ main {
 /* 左サイトメニューデザイン */
 .nav p {
   font-size: 10px;
+  margin: 5% 0 5% 0;
 }
-ul {
+.nav ul {
   width: 90%;
 }
-ul > :first-child {
-  width: 100%;
+.nav ul > :first-child {
+  width: 90%;
   height: 50px;
 }
-/* ここ直したい */
-/* .search{ */
-/* classをつけて大きくする */
-ul > :nth-child(3) {
-  width: 100%;
+.nav ul > :nth-child(3) {
+  width: 90%;
   height: 40px;
 }
-li {
+.nav li {
   background-color: #fff;
   color: #000;
-  width: 100%;
+  width: 90%;
   height: 30px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 .login_icon {
   background-image: url("img-3/sprite.png");
-  background-position: 20px 0;
+  display: inline-block;
+  background-position: -64px -32px;
   background-repeat: no-repeat;
-  height: 20px;
-  width: 20px;
+  height: 32px;
+  width: 32px;
+}
+.seach_icon{
+  background-image: url("img-3/sprite.png");
+  display: inline-block;
+  background-position: -64px 0px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+}
+input{
+  display: inline-block;
+  width: 70px;
+}
+input[type="text"]:focus{
+  box-shadow: 0 0 2px 2px #1e90ff;
+  outline: 0;
 }
 .main_cts {
-  padding-left: 20px;
+  padding-left: 10px;
 }
-.main_cts h1{
+.main_cts h1 {
   font-weight: bold;
   font-size: x-large;
+  margin-bottom: 2%;
 }
-.main_img img{
+.main_cts p {
+  margin-bottom: 3%;
+}
+.main_img img {
   height: 380px;
-  width: 540px;
+  width: 580px;
+  margin-bottom: 5%;
 }
-.main_cts h2{
+.main_cts h2 {
   font-weight: bold;
   font-size: larger;
+  margin-bottom: 2%;
+  border-left: solid 5px #696969;
+}
+.contents p {
+  width: 580px;
 }
 .side_menu {
   padding-left: 20px;
 }
-
+.Author_introduction h2 {
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 5%;
+}
+.ranking {
+  margin-top: 10%;
+}
+.ranking_icon {
+  background-image: url("img-3/sprite.png");
+  display: inline-block;
+  background-position: -96px 0px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+}
+.ranking li {
+  width: 110%;
+  height: 60px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 8px;
+}
+.sub_menu{
+  margin-top: 20%;
+  height: 50%;
+}
+.sub_menu li{
+  width: 110%;
+  background-color: #fff;
+  color: #000;
+  height: 30px;
+  margin-bottom: 8px;
+}
