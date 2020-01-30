@@ -122,64 +122,63 @@ $(function() {
   $(".q37 li:has(span)").css("color", "red");
   // 問題38:parentセレクター
   // parentセレクターを使い、何らかの子要素が含まれるli要素の文字の色を赤色に変えてください。
-  // $('.q38 li.parent()').css('color','red');
+  $('.q38 li').parent().css('color','red');
   // 問題39:childrenメソッド
   // childrenメソッドを使い、クラスq39の直下のa要素のみ文字の色を赤色に変えてください。
-  $('.q39 .children("a")').css("color", "red");
+  $('.q39').children("a").css("color", "red");
   // 問題40:findメソッド
   // findメソッドを使い、クラスq40より下にあるa要素の文字の色を赤色に変えてください。2箇所色が変われば正解。
-  $(".q40")
-    .find("a")
-    .css("color", "red");
+  $(".q40").find("a").css("color", "red");
   // 補足：childrenメソッドは直下の子要素を取得する。findメソッドは子孫要素を取得する
 
   // 問題41:prevメソッド
   // prevメソッドを使い、クラスpre-itemの前のli要素の文字の色を赤色に変えてください。
-
+$('.q41 li.pre-item').prev().css("color", "red");
   // 問題42:parentsメソッド
   // parentsメソッドを使い、クラスq42itemの親要素クラスq42を取得し、背景色を赤色に変えてください。
-
+$('.q42item').parents('.q42').css("background-color", "red");
   // 問題43:nextメソッド
   // nextメソッドを使い、クラスq43の兄弟要素の次の要素の文字の色を赤色に変えてください。
-
+  $('.q43').next().css("color", "red");
   // 問題44:siblingsメソッド
   // siblingsメソッドを使い、クラスsecound以外の要素の文字の色を赤色に変えてください。
-
+$('.q44 li.secound').siblings().css("color", "red");
   // 問題45:attrメソッド
   // attrメソッドを使い、a要素のhref属性を、https://codelabo.net/に書き換えてください。
-
+$('.q45 a').attr("href", "https://codelabo.net/");
   // 問題46:dataメソッド、textメソッド
   // dataメソッドを使い、クラスq46のカスタム属性numの値を取得し、変数に代入してください。
   // またtextメソッドを使い、変数をクラスq46内のテキストに表示してください。
-
+//  var q46 = $('q46').data("num");
+//  console.log(q46:text());
   // 問題47:prependメソッド
   // prependメソッドを使い、<p>追加テキストテキスト</p> をクラスq47内の最初に表示してください。
-
+$('.q47').prepend("<p>追加テキストテキスト</p>");
   // 問題48:要素を最後に挿入 appendメソッド
   // appendメソッドを使い、<p>追加テキストテキスト</p> をクラスq48内の最後に表示してください。
-
+  $('.q48').append("<p>追加テキストテキスト</p>");
   // 問題49：要素の置き換え replaceWithメソッド
   // replaceWithメソッドを使い、クラスq49のp要素を　<h2>置き換え後</h2>に書き換えてください。
-
+$('.q49 p').replaceWith("<h2>置き換え後</h2>");
   // 問題50：要素の削除 removeメソッド
   // removeメソッドを使い、クラスq50のp要素を削除してください。
-
+  $('.q50 p').remove();
   // 問題51：クラス属性の追加 addClassメソッド
   // addClassメソッドを使い、クラスq51のp要素にクラスredを追加してください。
-
+  $('.q51 p').addClass("red");
   // 問題52：クラス属性の削除 removelassメソッド
   // removeClassメソッドを使い、クラスq52のp要素のクラスredを削除してください。
-
+  $('.q52 p').removeClass("red");
   // 問題53：メソッドチェーン
   // 以下の2行のコードをメソッドチェーンを使い、1行にまとめてください。
   // $(".q53 p").addClass("red");
   // $(".q53 p").append("<span>追加テキスト</span>");
-  $(".q53 p")
-    .addClass("red")
-    .append("<span>追加テキスト</span>");
+  $(".q53 p").addClass("red").append("<span>追加テキスト</span>");
   // 問題54：イベント click
   // ボタンをクリックしたとき、クラスq54内の最後に<p>追加テキストテキスト</p>を追加してください。
-
+$('.q54').on("click", function(){
+  $('.q54').append("<p>追加テキストテキスト</p>");
+})
   // onメソッドについては以下を参照
   // https://qiita.com/shizuma/items/d561f37f864c3ebb5096
 });
