@@ -28,6 +28,6 @@
   padding: 15px;
 }
 
-#accordion > dd .open{
-  display:block;
+#accordion .close{
+  display:none;
 }
