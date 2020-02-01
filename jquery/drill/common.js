@@ -171,9 +171,9 @@ $('.q49 p').replaceWith("<h2>置き換え後</h2>");
   $('.q52 p').removeClass("red");
   // 問題53：メソッドチェーン
   // 以下の2行のコードをメソッドチェーンを使い、1行にまとめてください。
-  // $(".q53 p").addClass("red");
+  $(".q53 p").addClass("red");
   // $(".q53 p").append("<span>追加テキスト</span>");
-  $(".q53 p").addClass("red").append("<span>追加テキスト</span>");
+  // $(".q53 p").addClass("red").append("<span>追加テキスト</span>");
   // 問題54：イベント click
   // ボタンをクリックしたとき、クラスq54内の最後に<p>追加テキストテキスト</p>を追加してください。
 $('.q54').on("click", function(){
