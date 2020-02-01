@@ -27,3 +27,7 @@
   margin: 0px;
   padding: 15px;
 }
+
+#accordion > dd .open{
+  display:block;
+}
