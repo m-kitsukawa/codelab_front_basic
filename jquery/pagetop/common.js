@@ -1,10 +1,10 @@
 $(function() {
-  $("#pagetop").hide();
+  $("#pageTop").hide();
   $(window).scroll(function() {
     if ($(window).scrollTop() > 150) {
-      $("#pagetop").slideDown(600);
+      $("#pageTop").fadeIn();
     } else {
-      $("#pagetop").slideUp(600);
+      $("#pageTop").fadeOut();
     }
   });
 });
