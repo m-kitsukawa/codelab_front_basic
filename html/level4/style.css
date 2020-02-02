@@ -203,13 +203,118 @@ height: 300px;
 .gallery_space{
   width: 1200px;
   margin-left: 150px;
+  height: 700px;
 }
-.img2{
-  border-radius: 50%;
+.img1{
+  position: relative;
+  top: 50px;
+  left: 16%;
+  zoom: 1.1;
 }
-.img4{
+.img2 img{
   border-radius: 50%;
+  position: relative;
+  bottom: 140px;
+  left: 34%;
+  /* zoom: 1.1; */
 }
-.img5{
+.img3 img{
   border-radius: 50%;
+  position: relative;
+  bottom: 300px;
+  left: 58%;
+  zoom: 1.1;
+}
+.img4 img{
+  border-radius: 50%;
+  position: relative;
+  bottom: 400px;
+  left: 69%;
+  zoom: 1.1;
+}
+.img5 img{
+  border-radius: 50%;
+  position: relative;
+  bottom: 630px;
+  left: 5%;
+}
+.img6 img{
+  border-radius: 50%;
+  position: relative;
+  bottom: 620px;
+  left: 15%;
+  zoom: 1.1;
+}
+.img7{
+  position: relative;
+  bottom: 780px;
+  left: 32%;
+  /* zoom: 1.1; */
+}
+.img8{
+  position: relative;
+  bottom: 800px;
+  left: 68%;
+  zoom: 1.1;
+}
+.img9{
+  position: relative;
+  bottom: 1000px;
+  left: 82%;
+  zoom: 1.1;
+}
+.img10 img{
+  border-radius: 50%;
+  position: relative;
+  bottom: 1150px;
+  left: 3%;
+  zoom: 1.1;
+}
+.round_yoga1{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  text-align: center;
+  line-height: 120px;
+  color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  bottom: 1880px;
+  left: 3%;
+}
+.round_yoga2{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  text-align: center;
+  line-height: 120px;
+  color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  bottom: 1850px;
+  left: 89%;
+}
+.round_jimu{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  text-align: center;
+  line-height: 230px;
+  color: #ffffff;
+  font-size: 30px;
+  position: relative;
+  bottom: 1850px;
+  left: 48%;
 }
