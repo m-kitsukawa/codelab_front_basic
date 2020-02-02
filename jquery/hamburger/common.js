@@ -1,12 +1,22 @@
-$(".fa fa-bars").on("click", function() {
+$(".fa").on("click", function() {
   if ($('body').hasClass("active")) {
     $('body').removeClass("active");
-    $(".fa fa-times").slideUp();
+    $(".fa").slideUp();
   } else {
     $('body').addClass("active");
-    $(".fa fa-times").slideDown();
+    $(".fa").slideDown();
   }
 });
+$("#mask").on("click", function() {
+  if ($('body').hasClass("active")) {
+    $('body').removeClass("active");
+    $("fa").slideUp();
+  } else {
+    $('body').addClass("active");
+    $("fa").slideDown();
+  }
+});
+
 // console.log('common js');
 // console.log($('.fa'));
 // $('.fa').on("click", function() {
