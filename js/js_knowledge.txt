@@ -1,0 +1,97 @@
+・JSの役割
+→JavaScriptはプログラミング言語であり、ユーザー側のWebブラウザと、Webサイトまたはウェブサービスの相互間のやりとりを、円滑にするために使われています。
+https://techacademy.jp/magazine/8801
+JSを外部ファイルとして読み込む場合、scriptタグの何という属性ファイルパスを記載するか
+<html>
+  <head>
+    <script type="text/javascript" src="sample.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+
+JSはbody終了タグの直前で読み込むことが多い理由
+https://memocarilog.info/jquery/5842
+Webページの表示速度を早くする
+並列ダウンロードの妨げになってしまう
+jQuery のready()メソッドを書かなくてもよくなる
+
+・オブジェクト
+オブジェクトとは、プロパティ（※）を複数集めたもの集合のことです。変数配列もオブジェクトの一種に当たります。
+https://techacademy.jp/magazine/5556
+
+・メソッド
+メソッドとは、オブジェクトのプロパティに代入された関数のことを言います。
+あるオブジェクトのプロパティに関数を定義した場合、関数と呼ばずに、そのオブジェクトのメソッドと呼びます。
+
+・プロパティ
+あらかじめ設定しておいた特定の情報（値）に、名前（プロパティ名）をつけたもの
+https://techacademy.jp/magazine/5556
+
+・Elementオブジェクト
+Elementオブジェクトとは、、HTMLドキュメント中にある form要素内で配置されるエレメント (要素) を集めたオブジェクトです。
+https://www.scollabo.com/banban/java/ref_12.html
+・クッキー
+cookieとは、ブラウザに保存される小さな情報です。
+例えばログインが必要なWebサイトに2回目以降訪問した場合、ログインIDを入力する欄にあらかじめIDが設定されている場合があります。このような場面で利用されるのがcookieです。
+cookieを読み書き削除するにはdocument.cookieを使います。
+https://techacademy.jp/magazine/20783
+
+・カスタム属性
+htmlタグの属性には、classやid、hrefといった様々なものがあります。カスタムデータ属性を使用すると、オリジナルの属性を作ることができます。
+カスタムデータ属性は主にJavaScriptで値を取得するときに使われます。class属性はスタイル情報を割り当てることが目的で、データを格納するには適切ではありません。
+https://qiita.com/k152744/items/c96fcf0141798bf48dd7
+
+・JSON
+「JSON」は、さまざまな情報をやり取りするためのデータ形式のことでファイルの拡張子は「.json」になります。
+JSONは軽量で単純なテキストデータのため、サーバー間の通信やさまざまなプログラミング言語との共有などにも効果的です。
+JavaScriptのオブジェクト形式のような構造をしていることから、特にJavaScriptと親和性が高いのが特徴です。
+https://www.sejuku.net/blog/47716
+
+・WebAPI
+調べはしましたがピンとこないので後日お伺いさせていただきたいです
+https://qiita.com/busyoumono99/items/9b5ffd35dd521bafce47
+
+・Ajax
+JavaScriptを使用して行われる非同期処理のこと.
+通常Webページの内容を変更するためには画面遷移やリロードする必要がありますが、ajaxを使用すればリロードせずにページの内容を変更することができます。
+サーバーにアクセスすることなくページを変更できるのでサーバーの負荷軽減や、リロードの時間の解消によるUX(ユーザーエクスペリエンス)の向上などが利点としてあげられます。
+https://techacademy.jp/magazine/9454
+
+・SPA(SinglePageApplication)
+フロントエンド開発の技術として、ブラウザの進化やHTML5の登場などによって誕生したアーキテクチャです。HTMLやJavaScript、CSSといったWeb技術で、デスクトップアプリケーションのような快適な操作性を実現できます。
+1枚のHTMLに対してJavaScriptで動的に変更を加えながら画面の描画を実現しているのが大きな特徴です。もちろん、既存のWebアプリケーション同様、ブラウザから利用できます。
+https://www.atmarkit.co.jp/ait/articles/1702/22/news012.html
+
+・スクリプト言語
+スクリプト言語はプログラミング言語のうち、比較的容易に記述や実行ができるものを指します。記述が自然言語に近いため習得しやすいとも言われます。
+https://it-trend.jp/development_tools/article/32-0031
+
+・オブジェクト指向
+オブジェクト指向プログラミング（Object Oriented Programming: OOP）とは、プログラムを手順ではなくて、モノの作成と操作として見る考え方。オブジェクトとは「モノ」を意味する。
+https://eng-entrance.com/what-oop
+
+・コンパイラ言語
+コンパイラ言語は先程少し触れましたが、機械語に翻訳された言語を用いています。つまり機械にやさしい言語となっています。
+https://geekly.co.jp/column/cat-technology/1902_041/
+
+・JavaとJSの違い
+Java,→コンパイラ言語、JS→スクリプト言語
+
+・DOM
+Document Object Model (DOM) は、— ウェブページを表す HTML のように — 文書の構造をメモリ内に表現することで、ウェブページとスクリプトやプログラミング言語を接続するものです。
+ふつうは JavaScript を使用しますが、 HTML、 SVG、 XML などの文書をオブジェクトとしてモデリングすることは JavaScript 言語の一部ではありません。
+https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model
+
+・Node.js
+「Node.js」を使うと、JavaScriptでサーバー処理の制御をすべてプログラミングすることができます。
+https://www.sejuku.net/blog/45745
+
+・JSのバージョンの違い ES5/ES6
+https://qiita.com/rifutan/items/a55f132d4dae7e2f1941
+
+・GoogleChromeのデベロッパーツールでJSをデバッグは、何のタブで行うか？
+コンソール
+
+・GoogleChromeのデベロッパーツールでJSのログの確認は、何のタブで行うか？
+コンソール
