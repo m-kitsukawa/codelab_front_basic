@@ -1,5 +1,6 @@
 html {
   font-family: Georgia;
+  height: auto;
 }
 header {
   background-image: url("images/slider_img.jpg");
@@ -130,23 +131,43 @@ main {
 .guide h1 {
   font-size: 40px;
   margin-bottom: 2%;
+  width: 1200px;
+  margin-left: 120px;
+
 }
 .guide h3 {
   font-size: 20px;
+  width: 1200px;
+  margin-left: 120px;
+
 }
 .cource_selected {
   color: #ffffff;
   margin-top: 10%;
   width: 1200px;
-  margin-left: 250px;
+  margin-left: 120px;
 
 }
 .selected{
   justify-content: space-between;
   display: flex;
+  text-align: center;
 }
 .description{
   width: 60%;
+  margin: 0 auto;
+}
+.description h1{
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+font-weight: bold;
+font-size: 20px;
+}
+.description h3{
+  text-align: center;
+  margin-top: 40px;
+margin-bottom: 40px;
 }
 .cource_btn {
   width: 150px;
@@ -155,7 +176,7 @@ main {
   color: #ffffff;
   /* 影の色がつけられない */
   font-size: 15px;
-  margin-left: 40px;
+  /* margin-left: 10px; */
 }
 .sculpture_program{
   width: 1200px;
@@ -205,6 +226,22 @@ height: 300px;
   margin-left: 150px;
   height: 700px;
 }
+.fuwafuwa :hover{
+  -webkit-animation:fuwafuwa 3s infinite linear alternate;
+  animation:fuwafuwa 3s infinite linear alternate;
+  }
+  
+  @-webkit-keyframes fuwafuwa {
+  0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+  50% {-webkit-transform:translate(0, -5px) rotate(0deg);}
+  100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+  }
+  
+  @keyframes fuwafuwa {
+  0% {transform:translate(0, 0) rotate(-5deg);}
+  50% {transform:translate(0, -5px) rotate(0deg);}
+  100% {transform:translate(0, 0)rotate(5deg);}
+  }
 .img1{
   position: relative;
   top: 50px;
@@ -317,4 +354,90 @@ height: 300px;
   position: relative;
   bottom: 1850px;
   left: 48%;
+}
+.footer_menu{
+  width: 1500px;
+  display: flex;
+}
+.gyoengym{
+width: 700px;
+background-color: #ffffff;
+height: 400px;
+}
+.gyoengym h1{
+  font-size: 40px;
+  margin-left: 300px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.gyoengym p{
+  margin-left: 300px;
+  margin-top: 30px;
+font-size: 15px;
+}
+.links{
+  width: 800px;
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+height: 400px;
+color: #ffffff;
+display: flex;
+
+}
+.link{
+  width: 200px;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+.link h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.link ul{
+  margin-top: 30px;
+}
+.link li{
+  line-height: 30px;
+}
+.contact{
+  width: 400px;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+.contact h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact ul{
+  margin-top: 30px;
+}
+.contact li{
+  line-height: 30px;
+}
+footer{
+  background: linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -webkit-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
+  height: 200px;
+  width: 1500px;
+}
+.footer_img{
+  width: 400px;
+  height: 100px;
+}
+.footer_img img{
+  position: relative;
+  bottom: 350px;
+  left: 100px;
+}
+.footer_row{
+  width: 1400px;
+  text-align: center;
+}
+.footer_row span{
+  color: #ffffff;
+  font-weight: bold;
 }
