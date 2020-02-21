@@ -38,7 +38,7 @@ $(function() {
   $(".q10 li:not(.q10 li:first)").css("color", "red");
   // 問題11:疑似クラス empty
   // 疑似クラスemptyを使い、li要素が空の時、リストの中点の色を赤色に変えてください。
-  // $(".q11 li:empty").css("color", "red");
+  $(".q11 li:empty").css("color", "red");
   // 問題12:疑似クラス nth-child
   // 疑似クラスnth-childを使い、li要素の2番目の、リストの文字の色を赤色に変えてください。
   $(".q12 li:nth-child(2)").css("color", "red");
@@ -87,7 +87,7 @@ $(function() {
   $('.q26 li[class*="o"]').css("color", "red");
   // 問題27:複数の属性セレクターに該当する
   // クラス属性値が「o」「t」両方を含んでいる要素の文字の色を赤色に変えてください。
-  // $('.q27 li[class*="o"]' + '.q27 li[class*="t"]').css('color','red');
+  $('.q27 [class*="o"][class*="t"]').css('color','red');
   // 問題28:firstセレクター
   // firstセレクターを使い、一番最初のli要素の文字の色を赤色に変えてください。
   // 補足：first-childだと2つ変更されてしまいます。
@@ -149,8 +149,8 @@ $('.q45 a').attr("href", "https://codelabo.net/");
   // 問題46:dataメソッド、textメソッド
   // dataメソッドを使い、クラスq46のカスタム属性numの値を取得し、変数に代入してください。
   // またtextメソッドを使い、変数をクラスq46内のテキストに表示してください。
-//  var q46 = $('q46').data("num");
-//  console.log(q46:text());
+ var $num = $(".q46").data("num");
+ $(".q46").text($num);
   // 問題47:prependメソッド
   // prependメソッドを使い、<p>追加テキストテキスト</p> をクラスq47内の最初に表示してください。
 $('.q47').prepend("<p>追加テキストテキスト</p>");
@@ -171,9 +171,15 @@ $('.q49 p').replaceWith("<h2>置き換え後</h2>");
   $('.q52 p').removeClass("red");
   // 問題53：メソッドチェーン
   // 以下の2行のコードをメソッドチェーンを使い、1行にまとめてください。
-  $(".q53 p").addClass("red");
+//
+//
+//
+//
+//
+// できない
+  // $(".q53 p").addClass("red");
   // $(".q53 p").append("<span>追加テキスト</span>");
-  // $(".q53 p").addClass("red").append("<span>追加テキスト</span>");
+  $(".q53 p").addClass("red").append("<span>追加テキスト</span>");
   // 問題54：イベント click
   // ボタンをクリックしたとき、クラスq54内の最後に<p>追加テキストテキスト</p>を追加してください。
 $('.q54').on("click", function(){
