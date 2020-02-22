@@ -130,22 +130,19 @@ main {
 }
 .guide h1 {
   font-size: 40px;
-  margin-bottom: 2%;
   width: 1200px;
-  margin-left: 120px;
-
+  margin: 50px auto 0;
 }
 .guide h3 {
   font-size: 20px;
   width: 1200px;
   margin-left: 120px;
-
+  margin: 50px auto 0;
 }
 .cource_selected {
   color: #ffffff;
-  margin-top: 10%;
+  margin: 150px auto 0;
   width: 1200px;
-  margin-left: 120px;
 
 }
 .selected{
@@ -356,11 +353,11 @@ height: 300px;
   left: 48%;
 }
 .footer_menu{
-  width: 1500px;
+  width: 1600px;
   display: flex;
 }
 .gyoengym{
-width: 700px;
+width: 800px;
 background-color: #ffffff;
 height: 400px;
 }
@@ -422,7 +419,7 @@ footer{
   background: -moz-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   background: -o-linear-gradient(left ,#8165a6, #d83f87) repeat scroll 0 0;
   height: 200px;
-  width: 1500px;
+  width: 1600px;
 }
 .footer_img{
   width: 400px;
